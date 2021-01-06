@@ -5,7 +5,88 @@ Description: Basic HTML & CSS template for Personal Website;
 Version:1.0.0;
 */
 
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-md-6 {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+
+}
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+h1 {
+    color: #363958;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+.highlight {
+    color: #FF8367;
+}
+.header-area {
+    height: 80px;
+}
+.navigation {
+    list-style: none;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;    
+    padding: 20px 0;
+}
+.navigation li {
+    display: inline-block;
+    padding: 15px;
+}
+.navigation li a {
+    text-decoration: none;
+    color: #3c3c3c;
+    font-size: 16px;
+    line-height: 24px;
+}
+section.hero-area {
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.hero-info {
+    padding: 110px 0 20px;
+}
+.action-button {
+    margin: 30px 0;
+}
+.action-button a {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient( #FF8063, #F46060);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.action-button a:hover {
+    background-image: linear-gradient( #F46060,  #FF8063);
+}
+
+.hero-avater {
+    text-align: right;
+}
+.hero-avater img {
+    width: 90%;
 }
