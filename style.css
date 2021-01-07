@@ -5,6 +5,7 @@ Description: Basic HTML & CSS template for Personal Website;
 Version:1.0.0;
 */
 
+/********Common CSS********/
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +19,7 @@ body {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    overflow: hidden;
 }
 .col-md-4 {
     width: 33.33%;
@@ -34,14 +36,13 @@ h1, h2, h3, h4 {
     font-family: 'Bebas Neue', cursive;
     color: #363958;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 h1 {
     font-size: 80px;
-    letter-spacing: 2px;
 }
 h2 {
     font-size: 48px;
-    letter-spacing: 2px;
 }
 p {
     font-family: 'Roboto', sans-serif;
@@ -55,8 +56,15 @@ img {
 .highlight {
     color: #FF8367;
 }
+
+/*******Header Area******/
 .header-area {
     height: 80px;
+    overflow: hidden;
+}
+.header-logo h1 {
+    font-family: 'Courgette', cursive;
+    font-size: 60px;
 }
 .navigation {
     list-style: none;
@@ -71,16 +79,16 @@ img {
 .navigation li a {
     text-decoration: none;
     color: #3c3c3c;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
 }
+
+/*******Hero Section******/
 section.hero-area {
     padding: 30px 0;
     overflow: hidden;
 }
-
 .hero-info {
-    padding-right: 20%;
     padding-top: 20%;
     overflow: hidden;
 }
@@ -105,9 +113,11 @@ section.hero-area {
     width: 90%;
 }
 
+/*********About Section*********/
 section.about-area {
     padding: 30px 0;
     overflow: hidden;
+    background-color: #f9f9f9;
 }
 .about-avater {
     text-align: left;
@@ -120,15 +130,14 @@ section.about-area {
     padding-left: 20%;
 }
 
+/******Latest Work*******/
 section.latest-work {
-    background-color: #f7f7f7;
     padding: 120px 0;
     overflow: hidden;
 }
 .latest-work h2 {
     text-align: center;
     padding: 20px 0 40px;
-    font-weight: 400;
 }
 
 .latest-work .col-md-4 {
@@ -137,7 +146,7 @@ section.latest-work {
     width: 30.33%;
     margin: 1%;
     padding: 15px;
-    box-shadow: 0px 5px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 }
 .latest-work h3 {
     margin: 20px 0 10px;
@@ -148,12 +157,72 @@ section.latest-work {
     line-height: 28px;
 }
 
+/**********Testimonials*********/
+.testimonials {
+    padding: 70px 0 50px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+.testimonials h2 {
+    text-align: center;
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.testimonials-wrapper {
+    padding: 50px 0;
+}
+.testimonial-item {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding: 5% 2%;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / .10);
+}
+.testimonial-content {
+    padding: 10px;
+}
+.testimonial-content p {
+    font-size: 24px;
+    line-height: 36px;
+}
+.testimonial-author {
+    overflow: hidden;
+    opacity: .7;
+    cursor: pointer;
+}
+.testimonial-author:hover {
+    opacity: 1;
+}
+.testimonial-author img {
+    width: 70px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.testimonial-author .author-name {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.author-name p {
+    font-size: 18px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+/*********Contact Section********/
 .work-inquiry {
     padding: 80px;
     text-align: center;
     overflow: hidden;
 }
-
 .work-heading {
     width: 70%;
     margin: 0 auto;
@@ -194,12 +263,10 @@ section.latest-work {
 ul.social-icons {
     list-style: none;
 }
-
 ul.social-icons li {
     display: inline-block;
     margin-right: 20px;
 }
-
 ul.social-icons li img {
     width: 32px;
 }

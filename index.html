@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shariatullah Milon | Freelance Web Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header-area">
         <div class="container">
-            <ul class="navigation">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a> </li>
-            </ul>
+            <div class="col-md-6">
+                <div class="header-logo">
+                    <h1>M<span class="highlight">.</span></h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="navigation">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </div>
+            
         </div>
     </header>
 
@@ -24,7 +32,7 @@
             <div class="col-md-6">
                 <div class="hero-info">
                     <h1>Hello, I'm</h1>
-                    <h1 class="highlight">Rob Davidson</h1>
+                    <h1 class="highlight">Shariatullah Milon</h1>
                     
                     <p>A full stack allaround designer that placerat <br>in massa consectetur</p>
                 
@@ -42,11 +50,11 @@
         </div>
     </section>
 
-    <section class="about-area">
+    <section id="about" class="about-area">
         <div class="container">
             <div class="col-md-6">
                 <div class="about-avater">
-                    <img src="images/milon.png" alt="Shariatullah Milon">
+                    <img src="images/profile.png" alt="Shariatullah Milon">
                 </div>
             </div>
 
@@ -65,7 +73,7 @@
         </div>
     </section>
 
-    <section class="latest-work">
+    <section id="portfolio" class="latest-work">
         <div class="container">
             <h2><span class="highlight">Lastet</span> Working Project</h2>
 
@@ -90,7 +98,30 @@
 
     </section>
 
-    <section class="contact-area">
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <h3>What People Say</h3>
+
+            <div class="testimonials-wrapper">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit consequuntur cum labore sunt inventore alias eligendi magnam. Reiciendis quis eveniet ullam dolor laborum, aut consequatur tenetur earum autem nulla.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial1.jpg" >
+                        <div class="author-name">
+                            <p class="highlight">Alex Chowdhury</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-area">
         <div class="work-inquiry">
             <div class="work-heading">
                 <h2>Work Inquiry</h2>
